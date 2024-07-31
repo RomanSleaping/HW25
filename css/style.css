@@ -247,7 +247,7 @@ header svg {
   position: absolute;
   text-align: center;
   background: rgba(47, 48, 58, 0.8);
-  bottom: 4px;
+  bottom: 0px;
 }
 .about-list-title {
   color: var(--white-color);
@@ -396,6 +396,7 @@ header svg {
 }
 .clients-item:hover {
   border-color: var(--blue-color);
+  cursor: pointer;
 }
 
 .clients-heading {
@@ -473,46 +474,48 @@ header svg {
 .footer-location {
   margin-top: 9px;
 }
-.footer-link-list {
+
+/* subscribe */
+
+.subscribe-list {
   display: flex;
   gap: 10px;
 }
-.footer-icon-item {
+.subscribe-list-item {
   width: 44px;
   height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 22px;
 
-  display: flex;
-  justify-content: center;
+  border-radius: 22px;
 }
-.footer-icon-item:hover {
-  background-color: var(--blue-color);
-}
-.footer-icon {
-  box-sizing: border-box;
-  display: flex;
+.subscribe-list-link {
   width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-.footer-icon svg {
+.subscribe-list-icon {
   fill: var(--white-color);
 }
-.footer-title-item {
-  margin-bottom: 20px;
+.subscribe-list-link:hover {
+  background-color: var(--blue-color);
 }
-.footer-list {
-  margin-left: 70px;
-  margin-top: 72px;
-}
-.footer-title {
-  color: var(--white-color);
 
+.subscribe-title {
+  color: var(--white-color);
+  margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
   line-height: calc(16 / 14);
   letter-spacing: 3%;
   text-align: left;
   text-transform: uppercase;
+}
+.subscribe {
+  margin-top: 72px;
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
 }

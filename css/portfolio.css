@@ -17,7 +17,7 @@ body {
 }
 .container {
   width: 1200px;
-  outline: solid red;
+
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -46,10 +46,13 @@ svg {
   align-items: center;
 }
 .header {
+  margin: 0 auto;
+  margin-bottom: 94px;
   width: 1600px;
   height: 80px;
   display: flex;
   align-items: center;
+  border: 1px solid rgb(236, 236, 236);
 }
 header li a:hover {
   color: var(--blue-color);
@@ -185,7 +188,6 @@ header svg {
 }
 
 /* FOOTER */
-
 .footer {
   background-color: var(--hero_footer-background);
   width: 1600px;
@@ -233,42 +235,38 @@ header svg {
 .footer-location {
   margin-top: 9px;
 }
-.footer-link-list {
+
+/* subscribe */
+
+.subscribe-list {
   display: flex;
   gap: 10px;
 }
-.footer-icon-item {
+.subscribe-list-item {
   width: 44px;
   height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 22px;
 
-  display: flex;
-  justify-content: center;
+  border-radius: 22px;
 }
-.footer-icon-item:hover {
-  background-color: var(--blue-color);
-}
-.footer-icon {
-  box-sizing: border-box;
-  display: flex;
+.subscribe-list-link {
   width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-.footer-icon svg {
+.subscribe-list-icon {
   fill: var(--white-color);
 }
-.footer-title-item {
-  margin-bottom: 20px;
+.subscribe-list-link:hover {
+  background-color: var(--blue-color);
 }
-.footer-list {
-  margin-left: 70px;
-  margin-top: 72px;
-}
-.footer-title {
-  color: var(--white-color);
 
+.subscribe-title {
+  color: var(--white-color);
+  margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
   line-height: calc(16 / 14);
@@ -276,6 +274,13 @@ header svg {
   text-align: left;
   text-transform: uppercase;
 }
+.subscribe {
+  margin-top: 72px;
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+}
+
 .instagram {
   width: 20px;
   height: 20px;
